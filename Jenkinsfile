@@ -1,4 +1,4 @@
-    node {  
+node {  
     agent{
         docker{
             image 'node:16-buster-slim'
@@ -10,8 +10,5 @@
     }
     stage('Test') { 
         sh './jenkins/scripts/test.sh' 
-    }
-    stage('Deploy') { 
-        // 
     }
 }
