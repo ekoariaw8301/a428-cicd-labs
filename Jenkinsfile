@@ -1,9 +1,9 @@
 node{
    stage('Build') { 
-        sh './jenkins/scripts/test.sh'
+        sh 'npm install'
     }
     stage('Test') { 
-        // 
+        sh './jenkins/scripts/test.sh'  
     }
     stage('Deploy') { 
         // 
