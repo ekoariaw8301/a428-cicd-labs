@@ -1,6 +1,6 @@
 node{
    stage('Build') { 
-        sh 'npm install'
+        sh './jenkins/scripts/test.sh'
     }
     stage('Test') { 
         // 
